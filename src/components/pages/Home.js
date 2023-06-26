@@ -11,7 +11,7 @@ const Home = () => {
 
   const loadUsers = async () => {
     const result = await axios.get("http://localhost:3003/users");
-    setUser(result.data);
+    setUser(result.data.reverse());
   };
 
   return (

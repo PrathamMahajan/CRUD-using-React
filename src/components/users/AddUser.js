@@ -8,11 +8,9 @@ const AddUser = () => {
     name: "",
     username: "",
     email: "",  
-    phone: "",
-    website: ""
   });
 
-  const { name, username, email, phone, website } = user;
+  const { name, username, email} = user;
   const onInputChange = e => {
     setUser({ ...user, [e.target.name]: e.target.value });
   };
@@ -55,26 +53,6 @@ const AddUser = () => {
               placeholder="Enter Your E-mail Address"
               name="email"
               value={email}
-              onChange={e => onInputChange(e)}
-            />
-          </div>
-          <div className="form-group mb-3">
-            <input
-              type="text"
-              className="form-control form-control-lg"
-              placeholder="Enter Your Phone Number"
-              name="phone"
-              value={phone}
-              onChange={e => onInputChange(e)}
-            />
-          </div>
-          <div className="form-group mb-3">
-            <input
-              type="text"
-              className="form-control form-control-lg"
-              placeholder="Enter Your Website Name"
-              name="website"
-              value={website}
               onChange={e => onInputChange(e)}
             />
           </div>
