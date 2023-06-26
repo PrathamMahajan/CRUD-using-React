@@ -21,7 +21,7 @@ const Home = () => {
         <table class="table border shadow">
           <thead className="thead-dark">
             <tr>
-              <th scope="col">#</th>
+              <th scope="col">Sr. No</th>
               <th scope="col">Name</th>
               <th scope="col">User Name</th>
               <th scope="col">Email</th>
@@ -36,7 +36,7 @@ const Home = () => {
                 <td>{user.email}</td>
                 <td>
                   <Link className="btn btn-primary mr-2">View</Link>
-                  <Link className="btn btn-outline-primary mr-2">Edit</Link>
+                  <Link className="btn btn-outline-primary mr-2" exact to= {`/users/edit/${user.id}`}>Edit</Link>
                   <Link className="btn btn-outline-primary">Delete</Link>
                 </td>
               </tr>
